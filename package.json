@@ -1,0 +1,80 @@
+{
+  "name": "@sourceloop/vault",
+  "version": "1.0.0",
+  "description": "An extension for HashiCorp&#39;s Vault in loopback-next",
+  "keywords": [
+    "loopback-extension",
+    "loopback"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10.16"
+  },
+  "scripts": {
+    "build": "npm run clean && lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run build",
+    "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
+    "posttest": "npm run lint",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
+    "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
+    "prepublishOnly": "npm run lint",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/boot": "^2.4.0",
+    "@loopback/core": "^2.9.2",
+    "@loopback/rest": "^6.0.0",
+    "node-vault": "^0.9.20",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@loopback/build": "^6.1.1",
+    "@loopback/eslint-config": "^8.0.4",
+    "@loopback/testlab": "^3.2.1",
+    "@types/node": "^10.17.27",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^7.5.0",
+    "husky": "^4.2.5",
+    "semantic-release": "^17.1.1",
+    "source-map-support": "^0.5.19",
+    "typescript": "~3.9.7"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
