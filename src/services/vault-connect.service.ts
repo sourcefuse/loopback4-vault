@@ -59,6 +59,12 @@ export class VaultConnectProvider
         secret_shares: 1,
         key: keys[0],
       });
+    } else if (health.sealed) {
+      // unseal vault server
+      await this._vaultClient.unseal({
+        secret_shares: 1,
+        key: this.config?.unsealKey,
+      });
     }
   }
 }

@@ -5,6 +5,7 @@ export interface VaultConfig {
   secretThreshold?: number;
   pgpKeys?: string[];
   rootTokenPgpKey?: string;
+  unsealKey?: string;
 }
 
 export type VaultConnect = client;
