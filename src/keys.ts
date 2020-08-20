@@ -1,8 +1,9 @@
 import {BindingKey} from '@loopback/core';
-import {VaultConnect, VaultProviderOptions} from './types';
+import {VaultConnector} from './services/vault-connector';
+import {VaultProviderOptions} from './types';
 
 export namespace VaultSecurityBindings {
-  export const VAULT_CONNECTOR = BindingKey.create<VaultConnect>(
+  export const VAULT_CONNECTOR = BindingKey.create<VaultConnector>(
     'sf.security.vault.connect',
   );
 

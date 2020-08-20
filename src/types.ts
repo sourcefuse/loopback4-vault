@@ -1,4 +1,4 @@
-import {client, VaultOptions} from 'node-vault';
+import {VaultOptions} from 'node-vault';
 
 export interface VaultConfig {
   secretShares?: number;
@@ -7,7 +7,5 @@ export interface VaultConfig {
   rootTokenPgpKey?: string;
   unsealKey?: string;
 }
-
-export type VaultConnect = client;
 
 export type VaultProviderOptions = VaultOptions & VaultConfig;
