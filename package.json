@@ -68,6 +68,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "release": {
+    "branches": ["master"]
+  },
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
