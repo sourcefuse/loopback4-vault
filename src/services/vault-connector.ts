@@ -50,7 +50,7 @@ export class VaultConnector {
       await this._vaultClient.unseal({
         // eslint-disable-next-line @typescript-eslint/naming-convention
         secret_shares: 1,
-        key: this._unsealKey ?? config?.unsealKey ?? '',
+        key: config?.unsealKey ?? '',
       });
     }
   }

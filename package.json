@@ -28,7 +28,7 @@
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
     "prepublishOnly": "npm run lint",
-    "release": "semantic-release"
+    "release": "np"
   },
   "repository": {
     "type": "git",
