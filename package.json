@@ -1,6 +1,6 @@
 {
   "name": "@sourceloop/vault",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "An extension for HashiCorp&#39;s Vault in loopback-next",
   "keywords": [
     "loopback-extension",
@@ -69,7 +69,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "release": {
-    "branches": ["master"]
+    "branches": [
+      "master"
+    ]
   },
   "husky": {
     "hooks": {
