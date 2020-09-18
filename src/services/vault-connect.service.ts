@@ -26,7 +26,7 @@ export class VaultConnectProvider
           token: this.config?.token,
         });
         if (vaultClient) {
-          this._vaultClient = new VaultConnector(vaultClient);
+          this._vaultClient = new VaultConnector(vaultClient, this.config);
         }
       } catch (error) {
         console.error(`Vault connection failed ! Error :: ${error}`);

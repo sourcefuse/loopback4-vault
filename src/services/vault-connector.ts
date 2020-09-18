@@ -5,17 +5,20 @@ import {VaultProviderOptions} from '../types';
 export class VaultConnector {
   private _vaultClient: client;
   private _unsealKey = '';
+  private _config?: VaultProviderOptions;
 
-  constructor(clientInst: client) {
+  constructor(clientInst: client, config?: VaultProviderOptions) {
     if (!clientInst) {
       throw new HttpErrors.UnprocessableEntity(
         'Vault client instance not available !',
       );
     }
     this._vaultClient = clientInst;
+    this._config = config;
   }
 
-  async initContainer(config?: VaultProviderOptions) {
+  async initContainer() {
+    const config = this._config;
     const opts = {
       // eslint-disable-next-line @typescript-eslint/naming-convention
       secret_shares: config?.secretShares ?? 1,
