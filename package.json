@@ -43,7 +43,7 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@loopback/boot": "^2.4.0",
+    "@loopback/boot": "^2.5.1",
     "@loopback/core": "^2.9.2",
     "@loopback/rest": "^6.0.0",
     "node-vault": "^0.9.20",
