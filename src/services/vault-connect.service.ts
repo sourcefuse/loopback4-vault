@@ -1,6 +1,4 @@
 import {bind, BindingScope, inject, Provider} from '@loopback/core';
-import {HttpErrors} from '@loopback/rest';
-import * as vault from 'node-vault';
 import {VaultSecurityBindings} from '../keys';
 import {VaultProviderOptions} from '../types';
 import {VaultConnector} from './vault-connector';
@@ -19,19 +17,7 @@ export class VaultConnectProvider
 
   async value() {
     if (!this._vaultClient) {
-      try {
-        const vaultClient = vault.default({
-          apiVersion: this.config?.apiVersion ?? 'v1',
-          endpoint: this.config?.endpoint ?? 'http://127.0.0.1:8200',
-          token: this.config?.token,
-        });
-        if (vaultClient) {
-          this._vaultClient = new VaultConnector(vaultClient, this.config);
-        }
-      } catch (error) {
-        console.error(`Vault connection failed ! Error :: ${error}`);
-        throw new HttpErrors.Forbidden('Vault connection failed !');
-      }
+      this._vaultClient = new VaultConnector(this.config);
     }
     return this._vaultClient;
   }

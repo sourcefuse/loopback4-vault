@@ -62,6 +62,8 @@ Here is an example usage below
   }
 ```
 
+- If you need to update vault token or any other connection parameters, there is a `reconnect(config: VaultProviderOptions)` function available to do so. Whatever new config parameters are needed, you can pass those and leave the unchanged ones out of the config. It will only update the new ones keeping the existing ones intact and will reconnect with vault again. Please note that this may cause disconnection with your existing vault data if you change the endpoints here.
+
 ## Feedback
 
 If you've noticed a bug or have a question or have a feature request, [search the issue tracker](https://github.com/sourcefuse/loopback4-vault/issues) to see if someone else in the community has already created a ticket.
