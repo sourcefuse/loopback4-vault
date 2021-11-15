@@ -5,7 +5,8 @@ import {VaultConnector} from './vault-connector';
 
 @bind({scope: BindingScope.SINGLETON})
 export class VaultConnectProvider
-  implements Provider<VaultConnector | undefined> {
+  implements Provider<VaultConnector | undefined>
+{
   private _vaultClient: VaultConnector;
 
   constructor(
