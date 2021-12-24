@@ -2,7 +2,6 @@
 
 [![LoopBack](<https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png>)](http://loopback.io/)
 
-![Dependencies Status](https://img.shields.io/david/sourcefuse/loopback4-vault?style=flat-square)
 ![Loopback Core Version](https://img.shields.io/npm/dependency-version/@sourceloop/vault/@loopback/core?style=flat-square)
 
 [![Latest version](https://img.shields.io/npm/v/@sourceloop/vault.svg?style=flat-square)](https://www.npmjs.com/package/@sourceloop/vault)
