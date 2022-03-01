@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import {expect, sinon} from '@loopback/testlab';
 import proxyquire from 'proxyquire';
 import {VaultConnector, VaultConnectProvider} from '../../services';
