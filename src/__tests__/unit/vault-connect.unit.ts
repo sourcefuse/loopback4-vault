@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-misused-promises */
 import {expect, sinon} from '@loopback/testlab';
 import proxyquire from 'proxyquire';
 import {VaultConnector, VaultConnectProvider} from '../../services';
@@ -471,6 +470,7 @@ describe('Vault Service', () => {
           read: sinon.stub().returns({promise: () => Promise.resolve()}),
         };
         const connector = proxyquire('../../services/vault-connector', {
+          // eslint-disable-next-line @typescript-eslint/naming-convention
           'node-vault': sinon.stub().returns(mockClient),
         }).VaultConnector;
         const vaultConnector = new connector(config);

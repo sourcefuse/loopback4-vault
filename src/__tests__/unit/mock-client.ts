@@ -116,6 +116,7 @@ export class MockClient {
     };
 
     const connector = proxyquire('../../services/vault-connector', {
+      // eslint-disable-next-line @typescript-eslint/naming-convention
       'node-vault': sinon.stub().returns(mockClient),
     }).VaultConnector;
 
