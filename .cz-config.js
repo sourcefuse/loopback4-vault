@@ -24,7 +24,13 @@ module.exports = {
     {value: 'WIP', name: 'WIP:      Work in progress'},
   ],
 
-  scopes: [{name: 'chore'}, {name: 'deps'}, {name: 'ci-cd'}, {name: 'core'}, {name: 'vault'}],
+  scopes: [
+    {name: 'chore'},
+    {name: 'deps'},
+    {name: 'ci-cd'},
+    {name: 'core'},
+    {name: 'vault'},
+  ],
 
   appendBranchNameToCommitMessage: false,
   allowTicketNumber: false,
