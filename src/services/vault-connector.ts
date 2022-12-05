@@ -40,6 +40,7 @@ export class VaultConnector {
     });
     if (!health.initialized) {
       const resp = await this._vaultClient.init(opts);
+      // eslint-disable-next-line @typescript-eslint/prefer-optional-chain
       if (!resp || !resp.keys || resp.keys.length === 0 || !resp.root_token) {
         console.error(`Vault initialisation failed ! Response :: ${resp}`);
         throw new Error('Vault initialisation failed !');
