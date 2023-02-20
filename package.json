@@ -1,6 +1,6 @@
 {
   "name": "@sourceloop/vault",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "An extension for HashiCorp&#39;s Vault in loopback-next",
   "keywords": [
     "loopback-extension",
