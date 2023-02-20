@@ -1,3 +1,23 @@
+## Release [v4.2.1](https://github.com/sourcefuse/loopback4-vault/compare/v4.2.0..v4.2.1) February 20, 2023
+Welcome to the February 20, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Correct the changelog Format](https://github.com/sourcefuse/loopback4-vault/issues/53) :- [fix(chore): correct the changelog format ](https://github.com/sourcefuse/loopback4-vault/commit/384255541a5583367370f175e22efff58a9f0f68) was commited on February 20, 2023 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - now issue description will be visible
+      
+      -  GH-53
+      
+  
+  - [Package Update : loopback4-vault](https://github.com/sourcefuse/loopback4-vault/issues/50) :- [fix(chore): remove all current vulnerability of loopback4-vault ](https://github.com/sourcefuse/loopback4-vault/commit/559a0543d1cf00d23cfbb65b72204b3044ae8b66) was commited on February 20, 2023 by [Sunny Tyagi](mailto:107617248+Tyagi-Sunny@users.noreply.github.com)
+    
+      - remove all current vulnerability of loopback4-vault
+      
+      -  GH-50
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v4.2.0](https://github.com/sourcefuse/loopback4-vault/compare/v4.1.4..v4.2.0) January 11, 2023
 Welcome to the January 11, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
