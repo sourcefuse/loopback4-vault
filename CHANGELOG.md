@@ -1,3 +1,23 @@
+## Release [v4.2.2](https://github.com/sourcefuse/loopback4-vault/compare/v4.2.1..v4.2.2) March 13, 2023
+Welcome to the March 13, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [loopback version update](https://github.com/sourcefuse/loopback4-vault/issues/57) :- [chore(deps): loopback version update ](https://github.com/sourcefuse/loopback4-vault/commit/2d1d83fda71dc064bc4cde48a26a514c7714ad07) was commited on March 13, 2023 by [Gautam Agarwal](mailto:108651274+gautam23-sf@users.noreply.github.com)
+    
+      - loopback version update
+      
+      -  GH-57
+      
+  
+  - [Stale Bot missing in the repository](https://github.com/sourcefuse/loopback4-vault/issues/55) :- [chore(chore): add github stale bot ](https://github.com/sourcefuse/loopback4-vault/commit/ed89673ec5b18e964e92547f010f03c1a03b7e75) was commited on March 10, 2023 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - Added stale.yml file to configure stale options
+      
+      -  GH-55
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v4.2.1](https://github.com/sourcefuse/loopback4-vault/compare/v4.2.0..v4.2.1) February 20, 2023
 Welcome to the February 20, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
