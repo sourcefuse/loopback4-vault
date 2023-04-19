@@ -42,7 +42,6 @@ export class VaultConnector {
       const resp = await this._vaultClient.init(opts);
       // eslint-disable-next-line @typescript-eslint/prefer-optional-chain
       if (!resp || !resp.keys || resp.keys.length === 0 || !resp.root_token) {
-        console.error(`Vault initialisation failed ! Response :: ${resp}`);
         throw new Error('Vault initialisation failed !');
       }
       const keys = resp.keys;
@@ -55,7 +54,8 @@ export class VaultConnector {
         secret_shares: 1,
         key: this._unsealKey ?? config?.unsealKey ?? '',
       });
-    } else if (health.sealed) {
+    }
+    if (health.sealed && health.initialized) {
       // unseal vault server
       await this._vaultClient.unseal({
         // eslint-disable-next-line @typescript-eslint/naming-convention
@@ -438,7 +438,6 @@ export class VaultConnector {
         pathPrefix: this._config?.pathPrefix,
       });
     } catch (error) {
-      console.error(`Vault connection failed ! Error :: ${error}`);
       throw new HttpErrors.Forbidden('Vault connection failed !');
     }
   }
