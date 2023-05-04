@@ -30,6 +30,7 @@ module.exports = {
     {name: 'ci-cd'},
     {name: 'core'},
     {name: 'vault'},
+    {name: 'maintenance'},
   ],
 
   appendBranchNameToCommitMessage: false,
