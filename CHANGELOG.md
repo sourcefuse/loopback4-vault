@@ -1,3 +1,49 @@
+## Release [v5.0.0](https://github.com/sourcefuse/loopback4-vault/compare/v4.2.2..v5.0.0) June 7, 2023
+Welcome to the June 7, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Loopback version update](https://github.com/sourcefuse/loopback4-vault/issues/60) :- [chore(deps): loopback version update ](https://github.com/sourcefuse/loopback4-vault/commit/5d37a39aed931e1c7894b582e48677112e4c47fc) was commited on June 1, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - * chore(deps): loopback version update
+      
+      -  loopback version update
+      
+      -  GH-60
+      
+      - * chore(deps): loopback version update
+      
+      -  Loopback version update
+      
+      -  GH-60
+      
+  
+  - [Remove support for node v14](https://github.com/sourcefuse/loopback4-vault/issues/64) :- [feat(chore): remove support for node v14,v12,v10 ](https://github.com/sourcefuse/loopback4-vault/commit/ca0049e5e142ec737cedf7de11a997f82cbcde34) was commited on May 11, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - Version 14, v12, v10 of Nodejs reached its end of life
+      
+      -  BREAKING CHANGE:
+      
+      - End of life of node v14, node v12 and node v10
+      
+      -  GH-64
+      
+  
+  - [License and Copyright Headers’ Year Upgradation](https://github.com/sourcefuse/loopback4-vault/issues/62) :- [chore(maintenance): update license and copyright headers ](https://github.com/sourcefuse/loopback4-vault/commit/db603625bbe933eba74998ca36e458ff06c0b77e) was commited on May 4, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - to reflect the year change
+      
+      -  GH-62
+      
+  
+  - [Fix Sonar Quality Gate](https://github.com/sourcefuse/loopback4-vault/issues/52) :- [fix(chore): fix sonar code smells ](https://github.com/sourcefuse/loopback4-vault/commit/74056629f1429d4b019b8bb20e51aa69d0ec260a) was commited on April 19, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - resolves sonar code smells to improve quality gate
+      
+      -  GH-52
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v4.2.2](https://github.com/sourcefuse/loopback4-vault/compare/v4.2.1..v4.2.2) March 13, 2023
 Welcome to the March 13, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
