@@ -49,7 +49,7 @@
     "@loopback/core": "^5.1.0",
     "@loopback/rest": "^13.1.0",
     "node-vault": "^0.9.22",
-    "tslib": "^2.5.2"
+    "tslib": "^2.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
