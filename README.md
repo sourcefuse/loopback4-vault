@@ -1,6 +1,6 @@
 <a href="https://sourcefuse.github.io/arc-docs/arc-api-docs" target="_blank"><img src="https://github.com/sourcefuse/loopback4-microservice-catalog/blob/master/docs/assets/logo-dark-bg.png?raw=true" alt="ARC By SourceFuse logo" title="ARC By SourceFuse" align="right" width="150" /></a>
 
-# [loopback4-vault](https://github.com/sourcefuse/loopback4-vault)
+# [@sourceloop/vault](https://github.com/sourcefuse/loopback4-vault)
 
 <p align="left">
 <a href="https://www.npmjs.com/package/@sourceloop/vault">
