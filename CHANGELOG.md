@@ -1,3 +1,46 @@
+## Release [v5.0.1](https://github.com/sourcefuse/loopback4-vault/compare/v5.0.0..v5.0.1) July 14, 2023
+Welcome to the July 14, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/0) :- [](https://github.com/sourcefuse/loopback4-vault/commit/ce4586a1212842fe17682f4d18cce056f6445104) was commited on July 14, 2023 by [Shubham P](mailto:shubham.prajapat@sourcefuse.com)
+    
+      - Closes #69
+      
+      - GH-0
+      
+  
+  - [loopback version updates](https://github.com/sourcefuse/loopback4-vault/issues/70) :- [chore(deps): loopback version updates ](https://github.com/sourcefuse/loopback4-vault/commit/5f00640ed6c7a7ac6b94b5d34cb19add021ad0e6) was commited on July 14, 2023 by [Surbhi](mailto:98279679+Surbhi-sharma1@users.noreply.github.com)
+    
+      - * chore(deps): loopback version updates
+      
+      -  loopback version updates
+      
+      -  GH-70
+      
+      - * chore(deps): loopback version update
+      
+      -  loopback version update
+      
+      -  GH-70
+      
+  
+  - [Add ARC Branding in README](https://github.com/sourcefuse/loopback4-vault/issues/72) :- [docs(chore): add arc branding ](https://github.com/sourcefuse/loopback4-vault/commit/3b9f390ad6c13f3811c76d4c50b6e59fc62ae8b6) was commited on July 14, 2023 by [Surbhi](mailto:98279679+Surbhi-sharma1@users.noreply.github.com)
+    
+      - * docs(chore): add arc branding
+      
+      -  add arc branding
+      
+      -  GH-72
+      
+      - * docs(chore): add arc branding
+      
+      -  add arc branding
+      
+      -  GH-72
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v5.0.0](https://github.com/sourcefuse/loopback4-vault/compare/v4.2.2..v5.0.0) June 7, 2023
 Welcome to the June 7, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
