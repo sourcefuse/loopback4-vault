@@ -1,13 +1,27 @@
-# @sourceloop/vault
+<a href="https://sourcefuse.github.io/arc-docs/arc-api-docs" target="_blank"><img src="https://github.com/sourcefuse/loopback4-microservice-catalog/blob/master/docs/assets/logo-dark-bg.png?raw=true" alt="ARC By SourceFuse logo" title="ARC By SourceFuse" align="right" width="150" /></a>
 
-[![LoopBack](<https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png>)](http://loopback.io/)
+# [@sourceloop/vault](https://github.com/sourcefuse/loopback4-vault)
 
-![Loopback Core Version](https://img.shields.io/npm/dependency-version/@sourceloop/vault/@loopback/core?style=flat-square)
+<p align="left">
+<a href="https://www.npmjs.com/package/@sourceloop/vault">
+<img src="https://img.shields.io/npm/v/@sourceloop/vault.svg" alt="npm version" />
+</a>
+<a href="https://github.com/sourcefuse/loopback4-vault/graphs/contributors" target="_blank">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-vault">
+</a>
+<a href="https://www.npmjs.com/@sourceloop/vault" target="_blank">
+<img alt="downloads" src="https://img.shields.io/npm/dm/@sourceloop/vault">
+</a>
+<a href="https://github.com/sourcefuse/loopback4-s3/blob/master/LICENSE">
+<img src="https://img.shields.io/github/license/sourcefuse/loopback4-s3.svg" alt="License" />
+</a>
+<a href="https://loopback.io/" target="_blank">
+<img alt="Powered By LoopBack 4" src="https://img.shields.io/badge/Powered%20by-LoopBack 4-brightgreen" />
+</a>
+</p>
 
-[![Latest version](https://img.shields.io/npm/v/@sourceloop/vault.svg?style=flat-square)](https://www.npmjs.com/package/@sourceloop/vault)
-[![License](https://img.shields.io/github/license/sourcefuse/loopback4-authentication.svg?color=blue&label=License&style=flat-square)](https://github.com/sourcefuse/loopback4-vault/blob/master/LICENSE)
-[![Downloads](https://img.shields.io/npm/dw/@sourceloop/vault.svg?label=Downloads&style=flat-square&color=blue)](https://www.npmjs.com/package/@sourceloop/vault)
-[![Total Downloads](https://img.shields.io/npm/dt/@sourceloop/vault.svg?label=Total%20Downloads&style=flat-square&color=blue)](https://www.npmjs.com/package/@sourceloop/vault)
+
+## Overview
 
 A simple loopback-next extension for Hashicorp's [Vault](https://learn.hashicorp.com/vault) integration in loopback applications based on node.js vault client [node-vault](https://github.com/kr1sp1n/node-vault).
 
