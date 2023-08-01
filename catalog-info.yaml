@@ -6,6 +6,11 @@ metadata:
   description: LoopBack 4 extension for HashiCorp Vault integration.
   annotations:
     github.com/project-slug: sourcefuse/loopback4-vault
+  tags:
+    - vault
+    - hashicorp
+    - loopback
+    - extension
   links:
     - url: https://www.npmjs.com/package/@sourceloop/vault
       title: NPM Package
