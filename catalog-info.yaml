@@ -2,9 +2,16 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: loopback4-vault
+  namespace: arc
+  description: LoopBack 4 extension for HashiCorp Vault integration.
   annotations:
     github.com/project-slug: sourcefuse/loopback4-vault
+  links:
+    - url: https://www.npmjs.com/package/@sourceloop/vault
+      title: NPM Package
+    - url: https://developer.hashicorp.com/vault/api-docs/libraries#node-js
+      title: HashiCorp Vault Documentation
 spec:
-  type: other
-  lifecycle: unknown
+  type: component
+  lifecycle: production
   owner: sourcefuse
