@@ -1,0 +1,5 @@
+site_name: loopback4-vault
+site_description: loopback4-vault
+
+plugins:
+  - techdocs-core
