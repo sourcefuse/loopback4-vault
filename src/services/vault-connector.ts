@@ -10,7 +10,9 @@ export class VaultConnector {
 
   constructor(config?: VaultProviderOptions) {
     if (!config) {
-      throw new HttpErrors.UnprocessableEntity('Vault config not available !');
+      throw new HttpErrors.UnprocessableEntity(
+        'Vault config is not available !',
+      );
     }
     this._config = config;
     this._connect();
