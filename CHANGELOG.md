@@ -1,3 +1,38 @@
+## Release [v7.0.1](https://github.com/sourcefuse/loopback4-vault/compare/v7.0.0..v7.0.1) May 15, 2024
+Welcome to the May 15, 2024 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Generate Changelog](https://github.com/sourcefuse/loopback4-vault/issues/115) :- [fix(ci-cd): add changelog generation step ](https://github.com/sourcefuse/loopback4-vault/commit/8a27ada91d3d6958bf316edbf871ef6f6483a45c) was commited on May 15, 2024 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - * fix(ci-cd): add changelog generation step
+      
+      -  add the missing ci checks for pr
+      
+      -  GH-115
+      
+      - * fix(ci-cd): update remote origin url
+      
+      -  rectify the remote origin url in release workflow
+      
+      -  GH-115
+      
+  
+  - [Copy the Readme to root as well ](https://github.com/sourcefuse/loopback4-vault/issues/113) :- [docs(chore): copy the Readme to root as well ](https://github.com/sourcefuse/loopback4-vault/commit/b198e5191eb1cb52a128ea2698a78289eb0a083c) was commited on May 13, 2024 by [arpit1503khanna](mailto:108673359+arpit1503khanna@users.noreply.github.com)
+    
+      - copy the Readme to root as well
+      
+      -  GH-113
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/00) :- [chore(ci-cd): update readme path in sync docs action ](https://github.com/sourcefuse/loopback4-vault/commit/9773cf7ab7e8f4e1ba1b72625dee4110873c962e) was commited on March 14, 2024 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - since readme moved to docs folder
+      
+      -  GH-00
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v5.0.1](https://github.com/sourcefuse/loopback4-vault/compare/v5.0.0..v5.0.1) July 14, 2023
 Welcome to the July 14, 2023 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
