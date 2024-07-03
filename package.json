@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "@loopback/boot": "^7.0.2",
-    "@loopback/core": "^6.0.2",
+    "@loopback/core": "^6.1.0",
     "@loopback/rest": "^14.0.2",
     "node-vault": "^0.10.2",
     "tslib": "^2.0.0"
