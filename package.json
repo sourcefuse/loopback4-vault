@@ -45,11 +45,11 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@loopback/boot": "^7.0.2",
-    "@loopback/core": "^6.0.2",
+    "@loopback/boot": "^7.0.5",
+    "@loopback/core": "^6.1.2",
     "@loopback/rest": "^14.0.2",
     "node-vault": "^0.10.2",
-    "tslib": "^2.0.0"
+    "tslib": "^2.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
