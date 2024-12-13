@@ -1,3 +1,16 @@
+## Release [v7.0.3](https://github.com/sourcefuse/loopback4-vault/compare/v7.0.2..v7.0.3) December 13, 2024
+Welcome to the December 13, 2024 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/) :- [chore(deps): version update ](https://github.com/sourcefuse/loopback4-vault/commit/6b414e67bca82e5c72c29a0a75bdad1c7da3c0b2) was commited on December 13, 2024 by [Sunny Tyagi](mailto:107617248+Tyagi-Sunny@users.noreply.github.com)
+    
+      - version update
+      
+      -  gh-0
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v7.0.2](https://github.com/sourcefuse/loopback4-vault/compare/v7.0.1..v7.0.2) June 4, 2024
 Welcome to the June 4, 2024 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
