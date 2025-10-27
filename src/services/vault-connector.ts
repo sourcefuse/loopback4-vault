@@ -2,13 +2,19 @@ import {HttpErrors} from '@loopback/rest';
 import * as vault from 'node-vault';
 import {client, Option} from 'node-vault';
 import {VaultProviderOptions} from '../types';
+import {inject} from '@loopback/core';
+import {ILogger, LOGGER} from '@sourceloop/core';
 
 export class VaultConnector {
   private _vaultClient: client;
   private _unsealKey = '';
   private _config?: VaultProviderOptions;
 
-  constructor(config?: VaultProviderOptions) {
+  constructor(
+    @inject(LOGGER.LOGGER_INJECT)
+    public logger: ILogger,
+    config?: VaultProviderOptions,
+  ) {
     if (!config) {
       throw new HttpErrors.UnprocessableEntity('Vault config not available !');
     }
@@ -17,7 +23,7 @@ export class VaultConnector {
   }
 
   reconnect(config: VaultProviderOptions) {
-    this._config = Object.assign({}, this._config, config);
+    this._config = {...this._config, ...config};
     this._connect();
   }
 
@@ -28,32 +34,12 @@ export class VaultConnector {
       );
     }
     const config = this._config;
-    const opts = {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      secret_shares: config?.secretShares ?? 1,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      secret_threshold: config?.secretThreshold ?? 1,
-    };
     const health = await this._vaultClient.health({
       sealedcode: 200,
       uninitcode: 200,
     });
     if (!health.initialized) {
-      const resp = await this._vaultClient.init(opts);
-      // eslint-disable-next-line @typescript-eslint/prefer-optional-chain
-      if (!resp || !resp.keys || resp.keys.length === 0 || !resp.root_token) {
-        throw new Error('Vault initialisation failed !');
-      }
-      const keys = resp.keys;
-      // set token for all following requests
-      this._vaultClient.token = resp.root_token;
-      this._unsealKey = keys[0];
-      // unseal vault server
-      await this._vaultClient.unseal({
-        // eslint-disable-next-line @typescript-eslint/naming-convention
-        secret_shares: 1,
-        key: this._unsealKey ?? config?.unsealKey ?? '',
-      });
+      await this._initializeVault();
     }
     if (health.sealed && health.initialized) {
       // unseal vault server
@@ -63,6 +49,35 @@ export class VaultConnector {
         key: config?.unsealKey ?? '',
       });
     }
+  }
+
+  async _initializeVault() {
+    const config = this._config;
+    const opts = {
+      // eslint-disable-next-line @typescript-eslint/naming-convention
+      secret_shares: config?.secretShares ?? 1,
+      // eslint-disable-next-line @typescript-eslint/naming-convention
+      secret_threshold: config?.secretThreshold ?? 1,
+    };
+
+    const resp = await this._vaultClient.init(opts);
+    if (!resp?.keys?.length || !resp.root_token) {
+      throw new Error('Vault initialisation failed !');
+    }
+
+    const keys = resp.keys;
+    this._vaultClient.token = resp.root_token;
+    this._unsealKey = keys[0];
+
+    await this._performUnseal(this._unsealKey);
+  }
+
+  async _performUnseal(key: string) {
+    await this._vaultClient.unseal({
+      // eslint-disable-next-line @typescript-eslint/naming-convention
+      secret_shares: 1,
+      key: key,
+    });
   }
 
   async help(path: string, requestOptions?: Option): Promise<unknown> {
@@ -438,6 +453,7 @@ export class VaultConnector {
         pathPrefix: this._config?.pathPrefix,
       });
     } catch (error) {
+      this.logger.error(error.message);
       throw new HttpErrors.Forbidden('Vault connection failed !');
     }
   }

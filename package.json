@@ -48,6 +48,7 @@
     "@loopback/boot": "^8.0.4",
     "@loopback/core": "^7.0.3",
     "@loopback/rest": "^15.0.4",
+    "@sourceloop/core": "^20.0.0",
     "node-vault": "^0.10.2",
     "tslib": "^2.0.0"
   },
