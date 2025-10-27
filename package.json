@@ -61,7 +61,8 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/github": "^12.0.0",
+    "@semantic-release/npm": "^13.1.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/node": "^16.18.119",
     "@types/proxyquire": "^1.3.28",
@@ -75,7 +76,7 @@
     "jsdom": "^21.0.0",
     "nyc": "^17.1.0",
     "proxyquire": "^2.1.3",
-    "semantic-release": "^19.0.3",
+    "semantic-release": "^25.0.1",
     "simple-git": "^3.15.1",
     "source-map-support": "^0.5.21",
     "typescript": "~5.2.2"
@@ -102,9 +103,6 @@
       "finalhandler": "^1.2.0",
       "send": "^0.18.0",
       "serve-static": "^1.15.0"
-    },
-    "@semantic-release/npm": {
-      "npm": "^9.4.2"
     }
   },
   "release": {
@@ -126,7 +124,14 @@
         }
       ],
       "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
+      [
+     "@semantic-release/npm",
+     {
+       "npmPublish": true,
+       "pkgRoot": ".",
+       "tarballDir": "dist"
+     }
+   ],
       [
         "@semantic-release/git",
         {
@@ -139,7 +144,7 @@
       ],
       "@semantic-release/github"
     ],
-    "repositoryUrl": "git@github.com:sourcefuse/loopback4-vault.git"
+    "repositoryUrl": "https://github.com/sourcefuse/loopback4-vault.git"
   },
   "config": {
     "commitizen": {
