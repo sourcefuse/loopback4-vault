@@ -5,9 +5,9 @@ import {VaultConnector} from './vault-connector';
 import {ILogger, LOGGER} from '@sourceloop/core';
 
 @bind({scope: BindingScope.SINGLETON})
-export class VaultConnectProvider
-  implements Provider<VaultConnector | undefined>
-{
+export class VaultConnectProvider implements Provider<
+  VaultConnector | undefined
+> {
   private _vaultClient: VaultConnector;
 
   constructor(
