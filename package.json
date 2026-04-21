@@ -72,7 +72,7 @@
     "eslint": "^8.57.0",
     "fs-extra": "^11.3.4",
     "git-release-notes": "^5.0.0",
-    "husky": "^9.1.7",
+    "husky": "^7.0.4",
     "jsdom": "^21.1.2",
     "nyc": "^18.0.0",
     "proxyquire": "^2.1.3",
