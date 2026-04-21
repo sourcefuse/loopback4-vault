@@ -1,3 +1,58 @@
+## Release [v8.1.0](https://github.com/sourcefuse/loopback4-vault/compare/v8.0.0..v8.1.0) April 21, 2026
+Welcome to the April 21, 2026 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/188) :- [chore(deps): resolving package release issues ](https://github.com/sourcefuse/loopback4-vault/commit/37a66b77ed38d13d2bfbc46facf20c3dfe3ebb1f) was commited on April 21, 2026 by [Sourav](mailto:sourav.kashyap@sourcefuse.com)
+    
+      - resolving package release issues
+      
+      - GH-188
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/) :- [chore(deps): upgrade project dependencies to latest versions ](https://github.com/sourcefuse/loopback4-vault/commit/66216aae521332bb19cdbfe2bdd377f2dc341821) was commited on April 21, 2026 by [Sourav](mailto:sourav.kashyap@sourcefuse.com)
+    
+      - * chore(deps): upgrade project dependencies to latest versions
+      
+      - upgrade project dependencies to latest versions
+      
+      - GH-183
+      
+      - * chore(deps): upgraded to latest dependencies, comment resolved
+      
+      - * chore(ci-cd): Modify npm ci command to ignore scripts
+      
+      - * chore(ci-cd): Change npm install to npm ci in release workflow
+      
+      - ---------
+      
+      - Co-authored-by: Vinay Gupta &lt;vinay.gupta@sourcefuse.com&gt; Co-authored-by:
+      
+      - yeshamavani &lt;83634146+yeshamavani@users.noreply.github.com&gt;
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/) :- [refactor(chore): fix audit vulnerability ](https://github.com/sourcefuse/loopback4-vault/commit/f5123af3b7c3e2227672ff5a24ec8dd88c27e373) was commited on December 16, 2025 by [Piyush Singh Gaur](mailto:piyush.singh@sourcefuse.com)
+    
+      - Co-authored-by: Piyush Singh Gaur &lt;piyush.singh@Piyush-SFIN1664.local&gt;
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/158) :- [chore(ci-cd): trusted publisher ](https://github.com/sourcefuse/loopback4-vault/commit/3151bc95bdeabcddc864bdb588aab538ae72bdee) was commited on October 28, 2025 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - oidc supported
+      
+      - GH-158
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/) :- [feat(ci-cd): add trivy scan ](https://github.com/sourcefuse/loopback4-vault/commit/8033e4ba918802059a7946b7604a8ca9a7ffac40) was commited on October 27, 2025 by [Vaibhav Bhalla](mailto:vaibhav.bhalla@sourcefuse.com)
+    
+      - add trivy scan and fix sonarqube issues
+      
+      - GH-155
+      
+      - Co-authored-by: Vaibhav  Bhalla &lt;vaibhav.bhalla@SFSupports-MacBook-Air.local&gt;
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v8.0.0](https://github.com/sourcefuse/loopback4-vault/compare/v7.0.3..v8.0.0) September 8, 2025
 Welcome to the September 8, 2025 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
