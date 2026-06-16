@@ -1,3 +1,18 @@
+## Release [v9.0.0](https://github.com/sourcefuse/loopback4-vault/compare/v8.1.0..v9.0.0) June 16, 2026
+Welcome to the June 16, 2026 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-vault/issues/192) :- [refactor(chore): remove Node js 20 support ](https://github.com/sourcefuse/loopback4-vault/commit/bd59fe546c4f2f8bd6151f0acb1b91f746398ec6) was commited on June 16, 2026 by [Sourav](mailto:sourav.kashyap@sourcefuse.com)
+    
+      - remove Node js 20 support
+      
+      - BREAKING CHANGE: yes
+      
+      - GH-192
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v8.1.0](https://github.com/sourcefuse/loopback4-vault/compare/v8.0.0..v8.1.0) April 21, 2026
 Welcome to the April 21, 2026 release of @sourceloop/vault. There are many updates in this version that we hope you will like, the key highlights include:
 
